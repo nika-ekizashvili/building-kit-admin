@@ -94,6 +94,11 @@
       "relation": "manyToOne",
       "target": "api::condition.condition",
       "inversedBy": "projects"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
     }
   }
 }
