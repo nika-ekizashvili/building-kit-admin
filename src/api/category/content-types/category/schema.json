@@ -50,11 +50,11 @@
       "target": "api::craft.craft",
       "mappedBy": "category"
     },
-    "product": {
+    "products": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::product.product",
-      "mappedBy": "category"
+      "inversedBy": "categories"
     }
   }
 }

@@ -64,11 +64,11 @@
       "target": "api::unit.unit",
       "inversedBy": "products"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "product"
+      "mappedBy": "products"
     },
     "craft_imgae": {
       "type": "relation",
@@ -77,20 +77,20 @@
       "inversedBy": "product"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": true
+      }
     }
   }
 }
