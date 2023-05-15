@@ -57,9 +57,9 @@
     },
     "categories": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::category.category",
-      "mappedBy": "project"
+      "mappedBy": "projects"
     },
     "users_permissions_user": {
       "type": "relation",
@@ -98,7 +98,17 @@
     "products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::product.product"
+      "target": "api::product.product",
+      "mappedBy": "project"
+    },
+    "vat": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "required": true
     }
   }
 }
