@@ -38,12 +38,6 @@
         }
       }
     },
-    "project": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::project.project",
-      "inversedBy": "categories"
-    },
     "craft": {
       "type": "relation",
       "relation": "oneToOne",
@@ -54,7 +48,13 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
-      "mappedBy": "categories"
+      "inversedBy": "categories"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "categories"
     }
   }
 }
