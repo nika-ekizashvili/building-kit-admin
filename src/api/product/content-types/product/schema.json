@@ -97,6 +97,15 @@
       "relation": "manyToOne",
       "target": "api::project.project",
       "inversedBy": "products"
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
