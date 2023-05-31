@@ -32,17 +32,26 @@
         }
       }
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
-      "inversedBy": "craft"
+      "inversedBy": "crafts"
     },
     "product": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::product.product",
       "mappedBy": "craft_imgae"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

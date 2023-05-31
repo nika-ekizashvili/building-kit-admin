@@ -24,9 +24,9 @@
       "type": "string",
       "required": true
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::project.project",
       "mappedBy": "current_condition"
     }

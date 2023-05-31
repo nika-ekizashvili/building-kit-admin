@@ -4,7 +4,8 @@
   "info": {
     "singularName": "property-type",
     "pluralName": "property-types",
-    "displayName": "PropertyType"
+    "displayName": "PropertyType",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -36,9 +37,9 @@
     },
     "project": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::project.project",
-      "mappedBy": "property_type"
+      "inversedBy": "property_types"
     }
   }
 }
