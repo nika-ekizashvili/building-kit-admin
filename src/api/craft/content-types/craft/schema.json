@@ -38,12 +38,6 @@
       "target": "api::category.category",
       "inversedBy": "crafts"
     },
-    "product": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product.product",
-      "mappedBy": "craft_imgae"
-    },
     "title": {
       "pluginOptions": {
         "i18n": {
@@ -52,6 +46,12 @@
       },
       "type": "string",
       "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "craft_images"
     }
   }
 }
