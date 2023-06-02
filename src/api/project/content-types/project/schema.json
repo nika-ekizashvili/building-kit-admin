@@ -83,12 +83,6 @@
       "target": "api::current-condition.current-condition",
       "inversedBy": "projects"
     },
-    "condition": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::condition.condition",
-      "inversedBy": "projects"
-    },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
@@ -131,11 +125,17 @@
       "type": "string",
       "required": true
     },
+    "conditions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::condition.condition",
+      "inversedBy": "projects"
+    },
     "property_types": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::property-type.property-type",
-      "mappedBy": "project"
+      "inversedBy": "projects"
     }
   }
 }

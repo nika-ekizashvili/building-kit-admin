@@ -34,24 +34,6 @@
       "type": "string",
       "required": false
     },
-    "quantity": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "integer",
-      "required": true
-    },
-    "price": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "float",
-      "required": true
-    },
     "unit": {
       "type": "relation",
       "relation": "manyToOne",
@@ -63,12 +45,6 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mHEADSdBy": "products"
-    },
-    "craft_imgae": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::craft.craft",
-      "inversedBy": "product"
     },
     "image": {
       "type": "media",
@@ -114,6 +90,36 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::supplier.supplier",
+      "inversedBy": "products"
+    },
+    "quantity": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true,
+      "type": "integer"
+    },
+    "price": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "float",
+      "required": true
+    },
+    "craft_statuses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::craft-status.craft-status",
+      "inversedBy": "products"
+    },
+    "craft_images": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::craft.craft",
       "inversedBy": "products"
     }
   }

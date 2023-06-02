@@ -35,11 +35,11 @@
       "default": true,
       "required": true
     },
-    "project": {
+    "projects": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::project.project",
-      "inversedBy": "property_types"
+      "mappedBy": "property_types"
     }
   }
 }
