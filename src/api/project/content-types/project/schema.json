@@ -57,9 +57,9 @@
     },
     "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "project"
+      "inversedBy": "projects"
     },
     "image": {
       "type": "media",
@@ -98,7 +98,7 @@
       "type": "boolean",
       "required": true
     },
-    "unforseenExpenses": {
+    "unforeseenExpenses": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -136,6 +136,15 @@
       "relation": "manyToMany",
       "target": "api::property-type.property-type",
       "inversedBy": "projects"
+    },
+    "area": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
