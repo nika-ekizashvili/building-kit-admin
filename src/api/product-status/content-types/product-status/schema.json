@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "craft_statuses",
+  "collectionName": "product_statuses",
   "info": {
-    "singularName": "craft-status",
-    "pluralName": "craft-statuses",
-    "displayName": "CraftStatus"
+    "singularName": "product-status",
+    "pluralName": "product-statuses",
+    "displayName": "ProductStatus"
   },
   "options": {
     "draftAndPublish": true
@@ -28,7 +28,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "craft_status"
+      "mappedBy": "product_status"
     }
   }
 }

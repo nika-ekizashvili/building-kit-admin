@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "property_types",
+  "collectionName": "faqs",
   "info": {
-    "singularName": "property-type",
-    "pluralName": "property-types",
-    "displayName": "PropertyType",
-    "description": ""
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "answer": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -25,21 +24,14 @@
       "type": "string",
       "required": true
     },
-    "active": {
+    "question": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "boolean",
-      "default": true,
+      "type": "string",
       "required": true
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::project.project",
-      "mappedBy": "property_type"
     }
   }
 }

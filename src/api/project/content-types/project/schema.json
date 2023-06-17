@@ -125,15 +125,15 @@
       "type": "string",
       "required": true
     },
-    "conditions": {
+    "condition": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::condition.condition",
       "inversedBy": "projects"
     },
-    "property_types": {
+    "property_type": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::property-type.property-type",
       "inversedBy": "projects"
     },
@@ -145,6 +145,21 @@
       },
       "type": "string",
       "required": true
+    },
+    "drawing": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

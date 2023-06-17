@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  
+
   "strapi-chatgpt": {
     enabled: true,
   },
@@ -15,6 +15,8 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: './src/plugins/tbc-payment-api'
   },
+  'strapi-google-auth': {
+    enabled: true,
+  },
 });
 
-  
