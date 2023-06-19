@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
+  host: env('HOST', 'https://calcheloba.onrender.com'),
   port: env.int('PORT', 1377),
   app: {
     keys: env.array('APP_KEYS'),
