@@ -10,5 +10,5 @@ module.exports = ({ env }) => ({
   server: {
     keys: ['iojdwlkasjdlak3123', 'laksjdalksdjlk2323'],
   },
-  url: 'http://localhost:1377'
+  url: 'https://calcheloba.onrender.com:1377'
 });
