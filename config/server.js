@@ -1,3 +1,5 @@
+const forgotPasswordTemplate = require('./email-template/forgot-password');
+
 module.exports = ({ env }) => ({
   host: env('HOST', 'https://calcheloba.onrender.com'),
   port: env.int('PORT', 1377),
@@ -10,5 +12,12 @@ module.exports = ({ env }) => ({
   server: {
     keys: ['iojdwlkasjdlak3123', 'laksjdalksdjlk2323'],
   },
-  url: 'https://calcheloba.onrender.com'
+  url: 'https://calcheloba.onrender.com',
+  admin: {
+    forgotPassword: {
+      from: 'support@mywebsite.fr',
+      replyTo: 'support@mywebsite.fr',
+      emailTemplate: forgotPasswordTemplate,
+    },
+  },
 });
