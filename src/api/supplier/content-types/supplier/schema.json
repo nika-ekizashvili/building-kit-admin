@@ -4,7 +4,8 @@
   "info": {
     "singularName": "supplier",
     "pluralName": "suppliers",
-    "displayName": "Supplier"
+    "displayName": "Supplier",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,9 +25,9 @@
       "type": "string",
       "required": true
     },
-    "product": {
+    "products": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "supplier"
     }

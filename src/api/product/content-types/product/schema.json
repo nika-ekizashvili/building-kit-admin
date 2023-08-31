@@ -32,7 +32,65 @@
         }
       },
       "type": "string",
+      "required": false
+    },
+    "unit": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::unit.unit",
+      "inversedBy": "products"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "products"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "products"
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
       "required": true
+    },
+    "status": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "required": false
+    },
+    "supplier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::supplier.supplier",
+      "inversedBy": "products"
     },
     "quantity": {
       "pluginOptions": {
@@ -40,8 +98,8 @@
           "localized": true
         }
       },
-      "type": "integer",
-      "required": true
+      "required": true,
+      "type": "integer"
     },
     "price": {
       "pluginOptions": {
@@ -52,29 +110,31 @@
       "type": "float",
       "required": true
     },
-    "supplier": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::supplier.supplier",
-      "inversedBy": "product"
-    },
-    "unit": {
+    "craft_status": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::unit.unit",
+      "target": "api::craft-status.craft-status",
       "inversedBy": "products"
     },
-    "category": {
+    "craft_images": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category",
-      "inversedBy": "product"
-    },
-    "craft_imgae": {
-      "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::craft.craft",
-      "inversedBy": "product"
+      "inversedBy": "products"
+    },
+    "product_status": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-status.product-status",
+      "inversedBy": "products"
+    },
+    "craft_img_url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
