@@ -2,7 +2,7 @@
   "name": "my-project",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Building admin",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -19,6 +19,7 @@
     "better-sqlite3": "8.0.1",
     "google-auth": "^0.0.1",
     "mysql": "^2.18.1",
+    "nanoid": "^4.0.2",
     "pg": "^8.11.0",
     "postgres": "^3.3.5",
     "strapi-chatgpt": "^1.0.2",
@@ -26,7 +27,7 @@
     "strapi-provider-upload-aws-s3": "^3.6.11"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Hypercubic"
   },
   "strapi": {
     "uuid": "cab64e8e-2660-4dd9-8d0c-b4de0210aa05"
