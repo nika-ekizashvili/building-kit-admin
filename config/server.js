@@ -14,7 +14,7 @@ module.exports = ({ env }) => ({
     keys: ['iojdwlkasjdlak3123', 'laksjdalksdjlk2323'],
   },
   // url: 'http://localhost:1337',
-  url: env('HOST', 'https://calcheloba.onrender.com'),
+  url: 'https://calcheloba.onrender.com',
   admin: {
     forgotPassword: {
       from: 'nikusha.gogitidze.03@gmail.com',
