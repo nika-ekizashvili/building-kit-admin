@@ -3,10 +3,6 @@ const forgotPasswordTemplate = require('./email-template/forgot-password');
 module.exports = ({ env }) => ({
   // host: env('HOST', 'https://calcheloba.onrender.com'),
   // host: env('HOST', '127.0.0.1'),
-<<<<<<< HEAD
-=======
-
->>>>>>> 491219f55c58b51ecf4a381357364e2856ea272e
   port: env.int('PORT', 1337),
   app: {
     keys: env.array('APP_KEYS'),
