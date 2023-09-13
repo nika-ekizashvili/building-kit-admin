@@ -95,6 +95,9 @@
       "relation": "manyToOne",
       "target": "api::payment-plan.payment-plan",
       "inversedBy": "users"
+    },
+    "payment_duration": {
+      "type": "string"
     }
   }
 }
