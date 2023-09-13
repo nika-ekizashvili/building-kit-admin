@@ -75,10 +75,6 @@
       "type": "string",
       "required": true
     },
-    "userType": {
-      "type": "string",
-      "required": true
-    },
     "paymentPlan": {
       "type": "string",
       "required": true
