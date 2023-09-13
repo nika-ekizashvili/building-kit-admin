@@ -93,6 +93,12 @@
     "paymentMethod": {
       "type": "string",
       "required": true
+    },
+    "payment_plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::payment-plan.payment-plan",
+      "inversedBy": "users"
     }
   }
 }
