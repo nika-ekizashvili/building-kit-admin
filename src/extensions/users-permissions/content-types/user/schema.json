@@ -88,7 +88,8 @@
     },
     "paymentMethod": {
       "type": "string",
-      "required": false
+      "required": false,
+      "default": "TBC"
     },
     "payment_plan": {
       "type": "relation",
@@ -98,6 +99,22 @@
     },
     "payment_duration": {
       "type": "string"
+    },
+    "card_number": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "card_cvc": {
+      "type": "biginteger",
+      "required": true
+    },
+    "card_month": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "card_year": {
+      "type": "biginteger",
+      "required": true
     }
   }
 }
