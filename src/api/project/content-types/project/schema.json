@@ -89,15 +89,6 @@
       "target": "api::product.product",
       "mappedBy": "project"
     },
-    "vat": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean",
-      "required": true
-    },
     "unforeseenExpenses": {
       "pluginOptions": {
         "i18n": {
@@ -147,19 +138,28 @@
       "required": true
     },
     "drawing": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "main_img_id": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger"
     }
   }
 }
