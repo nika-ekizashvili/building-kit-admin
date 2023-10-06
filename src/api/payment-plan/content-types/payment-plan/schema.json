@@ -24,14 +24,6 @@
       },
       "type": "string"
     },
-    "month_allowed_products": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "month_allowed_projects": {
       "pluginOptions": {
         "i18n": {
@@ -71,14 +63,6 @@
       "type": "string"
     },
     "year_allowed_projects": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "year_allowed_products": {
       "pluginOptions": {
         "i18n": {
           "localized": true
