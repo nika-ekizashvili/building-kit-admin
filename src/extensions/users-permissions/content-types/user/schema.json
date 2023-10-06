@@ -75,14 +75,6 @@
       "type": "string",
       "required": true
     },
-    "userType": {
-      "type": "string",
-      "required": true
-    },
-    "paymentPlan": {
-      "type": "string",
-      "required": true
-    },
     "avatar": {
       "type": "media",
       "multiple": true,
@@ -96,7 +88,33 @@
     },
     "paymentMethod": {
       "type": "string",
-      "required": true
+      "required": false,
+      "default": "TBC"
+    },
+    "payment_plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::payment-plan.payment-plan",
+      "inversedBy": "users"
+    },
+    "payment_duration": {
+      "type": "string"
+    },
+    "card_number": {
+      "required": false,
+      "type": "biginteger"
+    },
+    "card_cvc": {
+      "type": "biginteger",
+      "required": false
+    },
+    "card_month": {
+      "required": false,
+      "type": "biginteger"
+    },
+    "card_year": {
+      "type": "biginteger",
+      "required": false
     }
   }
 }
