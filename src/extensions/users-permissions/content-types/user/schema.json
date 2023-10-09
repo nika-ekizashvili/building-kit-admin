@@ -115,6 +115,13 @@
     "card_year": {
       "type": "biginteger",
       "required": false
+    },
+    "trial_expires": {
+      "type": "datetime"
+    },
+    "trial_used": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
