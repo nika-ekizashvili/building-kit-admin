@@ -116,12 +116,16 @@
       "type": "biginteger",
       "required": false
     },
-    "trial_expires": {
-      "type": "datetime"
-    },
     "trial_used": {
       "type": "boolean",
       "default": false
+    },
+    "trial_expires": {
+      "type": "text",
+      "default": "false"
+    },
+    "account_type": {
+      "type": "string"
     }
   }
 }
