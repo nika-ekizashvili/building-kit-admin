@@ -13,12 +13,12 @@ module.exports = ({ env }) => ({
   server: {
     keys: ['iojdwlkasjdlak3123', 'laksjdalksdjlk2323'],
   },
-  // url: 'http://localhost:1337',
-  url: 'https://calcheloba.onrender.com',
+  url: 'http://localhost:1337',
+  // url: 'https://calcheloba.onrender.com',
   admin: {
     forgotPassword: {
-      from: 'nikusha.gogitidze.03@gmail.com',
-      replyTo: 'nikusha.gogitidze.03@gmail.com',
+      from: 'b_kalichava@cu.edu.ge',
+      replyTo: 'b_kalichava@cu.edu.ge',
       emailTemplate: forgotPasswordTemplate,
     },
   },

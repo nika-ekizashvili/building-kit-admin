@@ -57,14 +57,6 @@
       "relation": "manyToMany",
       "target": "api::craft.craft",
       "mappedBy": "categories"
-    },
-    "value": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean"
     }
   }
 }
