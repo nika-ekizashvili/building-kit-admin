@@ -23,5 +23,3 @@ module.exports = ({ env }) => ({
     },
   },
 });
-
-// cant be pushed
