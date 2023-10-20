@@ -77,15 +77,6 @@
       "type": "string",
       "required": true
     },
-    "status": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "boolean",
-      "required": false
-    },
     "supplier": {
       "type": "relation",
       "relation": "manyToOne",
