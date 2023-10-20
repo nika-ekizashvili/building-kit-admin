@@ -13,7 +13,6 @@ module.exports = ({ env }) => ({
   server: {
     keys: ['iojdwlkasjdlak3123', 'laksjdalksdjlk2323'],
   },
-  // backend urls
   // url: 'http://localhost:1337',
   url: 'https://calcheloba.onrender.com',
   admin: {
@@ -24,3 +23,5 @@ module.exports = ({ env }) => ({
     },
   },
 });
+
+// cant be pushed
