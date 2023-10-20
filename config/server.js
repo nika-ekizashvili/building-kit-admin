@@ -17,8 +17,8 @@ module.exports = ({ env }) => ({
   url: 'https://calcheloba.onrender.com',
   admin: {
     forgotPassword: {
-      from: 'nikusha.gogitidze.03@gmail.com',
-      replyTo: 'nikusha.gogitidze.03@gmail.com',
+      from: 'b_kalichava@cu.edu.ge',
+      replyTo: 'b_kalichava@cu.edu.ge',
       emailTemplate: forgotPasswordTemplate,
     },
   },
