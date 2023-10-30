@@ -160,6 +160,12 @@
         }
       },
       "type": "biginteger"
+    },
+    "shared_projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::shared-project.shared-project",
+      "mappedBy": "projects"
     }
   }
 }
