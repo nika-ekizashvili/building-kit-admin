@@ -126,6 +126,14 @@
         }
       },
       "type": "string"
+    },
+    "custom_craft_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

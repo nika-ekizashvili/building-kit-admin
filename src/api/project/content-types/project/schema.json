@@ -41,7 +41,7 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": false
     },
     "city": {
       "type": "relation",
