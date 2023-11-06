@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "craft_images_builds",
+  "info": {
+    "singularName": "craft-images-build",
+    "pluralName": "craft-images-builds",
+    "displayName": "CraftImagesBuild",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "category_builds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category-build.category-build",
+      "inversedBy": "craft_images_builds"
+    },
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "craft_images_builds"
+    }
+  }
+}
