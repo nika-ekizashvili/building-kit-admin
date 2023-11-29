@@ -126,6 +126,26 @@
         }
       },
       "type": "string"
+    },
+    "custom_craft_name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "category_builds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category-build.category-build",
+      "mappedBy": "products"
+    },
+    "craft_images_builds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::craft-images-build.craft-images-build",
+      "mappedBy": "products"
     }
   }
 }
